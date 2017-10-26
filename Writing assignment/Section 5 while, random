@@ -1,0 +1,20 @@
+import java.util.*;
+
+public static void randomX () {
+    Random rand = new Random();
+    int n = rand.nextInt(15) + 5;
+    int i = 0;
+    
+    while (n < 16) {
+        for (i = 1; i <= n; i++) {
+            System.out.print("x");
+        }
+        System.out.println();
+        n = rand.nextInt(15) + 5;
+        if (n > 16) {
+            for (i = 1; i <= n; i++) {
+            System.out.print("x");
+            }
+        }
+    }
+}
