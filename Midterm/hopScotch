@@ -1,0 +1,8 @@
+public static void hopScotch(int hops) {
+  System.out.println("  1  ");              //Placing post
+  for (i = 1; i <= hops; i++) {
+    System.out.println(3 * i - 1 + "    " + 3 * i);
+    System.out.println("   " + 3 * i + 1 + "    ");
+  } 
+  
+  }
