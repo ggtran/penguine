@@ -1,0 +1,30 @@
+public static void main(String[] args) {
+      Scanner fileInput = new Scanner(new File ("numbers.text");
+      double sum = 0.0;
+      
+      //Check to see if that file has anyhing left to read:
+      while (fileInput.hasNext()) {         
+         double next = fileInput.nextDouble();
+         System.out.println("number = " + next);
+         sum += mext;
+      }  
+      double rounded = Math.round(sum * 10.0) / 10.0;
+      System.out.println("Sum = " + rounded);
+   }
+}
+
+
+//Case where the input file has random text in it:
+   public static void secondCase() {
+      while (fileInput.hasNext()) {   
+         if (fileInput.hasNextDouble()) {  //Put this code inside   
+            double next = fileInput.nextDouble();
+            System.out.println("number = " + next);
+            sum += mext;
+         } else {
+            fileInput.next(); //throw that token away
+      }  
+      double rounded = Math.round(sum * 10.0) / 10.0;
+      System.out.println("Sum = " + rounded);
+   }
+
